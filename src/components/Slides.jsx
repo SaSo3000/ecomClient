@@ -11,7 +11,8 @@ height: 85vh;
 display: flex;
 position: relative;
 overflow: hidden;
-${mobile({ display: "none" })}
+${mobile({ height:"450px" })}
+
 
 `
 const Arrow = styled.div`
@@ -53,6 +54,7 @@ height: 100vh;
 display: flex;
 align-items: center;
 background-color: #${(props)=> props.bg};
+${mobile({ height:"50vh" })}
 
 `
 const ImgContainer = styled.div`
@@ -60,6 +62,7 @@ const ImgContainer = styled.div`
     height: 100%;
     flex: 1;
     margin-left: 70px;
+    ${mobile({ display: "none" })}
 
 `
 
@@ -68,6 +71,8 @@ const Image = styled.img`
 height: 80%;
 width: 100%;
 margin-top: 20px;
+
+
 
 `
 const InfoContainer = styled.div`
@@ -80,6 +85,8 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
 
 font-size: 30px;
+${mobile({ fontSize:"25px", marginLeft:"12px" })}
+
 
 `
 const Desc = styled.p`
@@ -88,6 +95,7 @@ margin: 50px 0px;
 font-size: 20px;
 font-weight: 500;
 letter-spacing: 3px;
+${mobile({ fontSize:"12px", marginLeft:"15px" })}
 
 `
 const Button = styled.button`
