@@ -66,7 +66,7 @@ const Login = () => {
     
     e.preventDefault();
 
-    await axios.post("https://ecom-api-gules-pi.vercel.app/api/auth/login", {username:userName, password:Password}).then((res)=>{
+    await axios.post("https://ecomback-y3f9.onrender.com/api/auth/login", {username:userName, password:Password}).then((res)=>{
       console.log(res.data);
       if(res.data){
         if(res.data.isAdmin || res.data.username){

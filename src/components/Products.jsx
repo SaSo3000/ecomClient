@@ -19,7 +19,7 @@ const Products = ({cat, filter, sort}) => {
   useEffect(()=>{
       const getProducts = async()=>{
         try{
-          const res = await axios.get(cat ? `https://ecom-api-gules-pi.vercel.app/api/product?category=${cat}` : `https://ecom-api-gules-pi.vercel.app/api/product`);
+          const res = await axios.get(cat ? `https://ecomback-y3f9.onrender.com/api/product?category=${cat}` : `https://ecomback-y3f9.onrender.com/api/product`);
           setProducts(res.data);
         }
         catch(err){

@@ -67,7 +67,7 @@ const Register = () => {
     const handleClick = async(e) =>{
         e.preventDefault();
         
-        await axios.post("https://ecom-api-gules-pi.vercel.app/api/auth/register", {username, email, password}).then((res)=>{
+        await axios.post("https://ecomback-y3f9.onrender.com/api/auth/register", {username, email, password}).then((res)=>{
             console.log(res);
             if(res.data){
                 navigate("/");
